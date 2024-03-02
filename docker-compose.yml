@@ -1,5 +1,7 @@
 version: "3.8"
 
+name: kafka
+
 services:
   kafka:
     extends:
@@ -10,3 +12,6 @@ services:
     extends:
       file: docker-compose-kafka.yml
       service: kafka-ui
+
+volumes:
+  kafka_data:
