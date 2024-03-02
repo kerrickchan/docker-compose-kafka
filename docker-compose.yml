@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  kafka:
+    extends:
+      file: docker-compose-kafka.yml
+      service: kafka
+  
+  kafka-ui:
+    extends:
+      file: docker-compose-kafka.yml
+      service: kafka-ui
